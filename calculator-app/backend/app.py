@@ -19,7 +19,7 @@ def calculate():
 
     result = 0
     if op == 'add':
-        result = a + b
+        result = a - b # BUG: Should be a + b
     elif op == 'subtract':
         result = a - b
     elif op == 'multiply':
