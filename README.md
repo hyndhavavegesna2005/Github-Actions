@@ -27,6 +27,20 @@ Github-Actions/
 -   **Advanced Operations**: Modulus (%).
 -   **Error Handling**: Handles division by zero and invalid inputs.
 
+## Assignment Compliance
+
+| Requirement | Implementation |
+| :--- | :--- |
+| **Repository Selection** | Created `calculator-app` with Python & Node.js components. |
+| **Workflow File Creation** | Created `.github/workflows/backend.yml` and `frontend.yml`. |
+| **Triggers** | Configured to run on `push` to `main`. |
+| **Jobs & Steps** | Defined jobs for setup, dependency installation, linting, and testing. |
+| **Environment** | Configured `ubuntu-latest` with Python 3.10 and Node.js 20.x/22.x. |
+| **Notifications** | Relied on GitHub's built-in status checks. |
+| **Caching (Optional)** | Implemented `cache: 'pip'` and `cache: 'npm'` for speed. |
+| **Documentation** | Updated `README.md` with pipeline details and error history. |
+| **Testing** | Verified pipeline success and failure (via intentional bug). |
+
 ## Continuous Integration (GitHub Actions)
 
 We have set up two GitHub Actions workflows to automatically build and test the application on every push to the `main` branch.
