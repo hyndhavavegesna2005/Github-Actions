@@ -28,6 +28,8 @@ def calculate():
         if b == 0:
             return jsonify({'error': 'Division by zero'}), 400
         result = a / b
+    elif op == 'modulus':
+        result = a % b
     else:
         return jsonify({'error': 'Invalid operation'}), 400
 

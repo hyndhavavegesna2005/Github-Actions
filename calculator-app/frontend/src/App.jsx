@@ -60,6 +60,7 @@ function App() {
           <button onClick={() => calculate('subtract')} data-testid="subtract-btn">Subtract</button>
           <button onClick={() => calculate('multiply')} data-testid="multiply-btn">Multiply</button>
           <button onClick={() => calculate('divide')} data-testid="divide-btn">Divide</button>
+          <button onClick={() => calculate('modulus')} data-testid="modulus-btn">Modulus</button>
         </div>
         {result !== null && <div className="result" data-testid="result">Result: {result}</div>}
         {error && <div className="error" data-testid="error">Error: {error}</div>}

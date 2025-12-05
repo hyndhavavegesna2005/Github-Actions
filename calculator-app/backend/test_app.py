@@ -33,6 +33,11 @@ def test_divide_by_zero(client):
     json_data = rv.get_json()
     assert json_data['error'] == 'Division by zero'
 
+def test_modulus(client):
+    rv = client.post('/api/calculate', json={'op': 'modulus', 'a': 10, 'b': 3})
+    json_data = rv.get_json()
+    assert json_data['result'] == 1.0
+
 def test_invalid_op(client):
     rv = client.post('/api/calculate', json={'op': 'unknown', 'a': 10, 'b': 5})
     assert rv.status_code == 400
