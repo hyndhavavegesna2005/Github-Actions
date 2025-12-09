@@ -2,7 +2,7 @@ name: Python Backend CI
 
 on:
   push:
-    branches: [ "main","features"]
+    branches: ["features"]
 
 permissions:
   contents: read
