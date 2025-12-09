@@ -8,7 +8,7 @@ The application consists of two main components:
 -   **Backend**: A Python Flask application providing API endpoints for arithmetic operations.
 -   **Frontend**: A React application (created with Vite) providing the user interface.
 
-## Directory Structure
+
 
 ```
 Github-Actions/
