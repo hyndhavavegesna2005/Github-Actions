@@ -2,7 +2,7 @@ name: Node.js Frontend CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "features" ]
 
 jobs:
   build-frontend:
